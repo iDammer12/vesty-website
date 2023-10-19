@@ -116,11 +116,12 @@
     justify-content: center;
     flex-direction: column;
     background-color: rgb(238, 238, 238);
+    width: 100%;
   }
 
   .slideshow-element {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 20px;
     object-fit: cover;
     transition: all 0.2s;
