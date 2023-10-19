@@ -119,18 +119,11 @@
   }
 
   .slideshow-element {
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 200px;
     margin: 20px;
     object-fit: cover;
-  }
-
-  .slideshow {
-    margin: 30px;
-    display: flex;
-    height: 400px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    transition: all 0.2s;
   }
 }
+
