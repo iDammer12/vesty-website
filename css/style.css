@@ -139,7 +139,65 @@
 
   .section-title h4 {
     width: 100px;
-    margin-left: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .section-title li { 
+    margin-left: -10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 175px);
+    gap: 10px;
+  }
+
+  .square {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+  }
+
+  .product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-title, .product-price {
+    font-size: 10px;
+    margin: 5px;
+  }
+
+  .product-price {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-price div {
+    margin-left: 5px;
+    color: red;
+  }
+
+  .product-details {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .product-details button {
+    width: 100%;
+    margin: 5px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
   }
 }
 
