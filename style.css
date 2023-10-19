@@ -94,7 +94,7 @@
   
   .section-1 {
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding-top: 30px;
     font-family: Arial;
     font-weight: bold;
@@ -102,12 +102,13 @@
     background-color: rgb(255, 255, 255);
     height: 500px;
     margin-top: -10px;
+    flex-direction: column;
   }
 
   .main-page {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
   }
 
   body {
@@ -115,5 +116,21 @@
     justify-content: center;
     flex-direction: column;
     background-color: rgb(238, 238, 238);
+  }
+
+  .slideshow-element {
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+    object-fit: cover;
+  }
+
+  .slideshow {
+    margin: 30px;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
