@@ -100,7 +100,7 @@
     font-weight: bold;
     width: 90%;
     background-color: rgb(255, 255, 255);
-    height: 500px;
+    height: 1000px;
     margin-top: -10px;
     flex-direction: column;
   }
@@ -125,6 +125,21 @@
     margin: 20px;
     object-fit: cover;
     transition: all 0.2s;
+  }
+
+  .section-2 {
+    margin: 20px;
+    width: 90%;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: start;
+  }
+
+  .section-title h4 {
+    width: 100px;
+    margin-left: 10px;
   }
 }
 
