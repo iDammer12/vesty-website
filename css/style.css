@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .hl {
@@ -37,6 +38,8 @@
   padding-top: 10px;
   margin-top: -10px;
   font-size: 15px;
+  margin-bottom: 0;
+  background-color: white;
 }
 
 
@@ -44,6 +47,124 @@
   background-color: rgb(200, 200, 200);
 }
 
+.section-1 {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  height: 1000px;
+  margin-top: -10px;
+  flex-direction: column;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+}
+
+.slideshow-element {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.section-2 {
+  margin: 20px;
+  width: 90%;
+}
+
+.section-title {
+  display: flex;
+  align-items: start;
+}
+
+.section-title h4 {
+  width: 100px;
+
+  margin-bottom: 10px;
+}
+
+.section-title li { 
+  margin-left: -10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, 180px);
+  gap: 10px;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+}
+
+.product-image {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  height: 100%;
+}
+
+
+.product-title, .product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.product-price div {
+  margin-left: 5px;
+  color: red;
+}
+
+.product-details {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 55px;
+}
+
+.product-details button {
+  width: 100%;
+  margin: 5px;
+  height: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+}
 
 
 @media screen and (max-width: 500px) {
@@ -150,7 +271,7 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 175px);
+    grid-template-rows: repeat(2, 180px);
     gap: 10px;
   }
 
@@ -163,19 +284,30 @@
   }
 
   .product-image {
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  .product-image img {
+    height: 100%;
+  }
+
+
   .product-title, .product-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 10px;
-    margin: 5px;
+    margin: 10px;
+    text-align: center;
   }
 
   .product-price {
     display: flex;
     flex-direction: row;
+
   }
 
   .product-price div {
@@ -187,7 +319,7 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    height: 50px;
+    height: 55px;
   }
 
   .product-details button {
