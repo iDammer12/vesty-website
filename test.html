@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+            transition: opacity 1s ease-in-out;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .mySlides {
+          display: none;
+         transition: opacity 1s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="images/slideshow-products/1.jpg">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/slideshow-products/2.jpg">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/slideshow-products/3.jpg">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/slideshow-products/4.jpg">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/slideshow-products/5.jpg">
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+</body>
+</html>
