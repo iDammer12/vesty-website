@@ -1,7 +1,7 @@
 
 
 const product = [{
-  image: "images/jordan-1-black-orange.webp", 
+  image: "images/jordan-1-black-orange.webp",
   name: "Air Jordan 1 ", 
   price: 2199,
   sale: "<div>-30%</div>"
