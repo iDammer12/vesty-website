@@ -17,6 +17,11 @@ const product = [{
   price: 2299 ,
   sale: "<div>-10%</div>", 
   style: "height: 110px; margin-top: 5px;"
+}, {
+  image: "images/nike-dunk-retro-white.webp", 
+  name: "Nike Dunk Retro", 
+  price: 2399, 
+  sale: "<div></div>"
 }];
 
 
