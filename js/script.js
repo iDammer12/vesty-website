@@ -16,12 +16,25 @@ const product = [{
   name: "Air Force 1 07'", 
   price: 2299 ,
   sale: "<div>-10%</div>", 
-  style: "height: 110px; margin-top: 5px;"
+  style: "height: 105px; margin-top: 5px;"
 }, {
   image: "images/nike-dunk-retro-white.webp", 
   name: "Nike Dunk Retro", 
   price: 2399, 
   sale: "<div></div>"
+}, {
+  image: "images/nike-juniper-trail-2.png", 
+  name: "Nike JT 2", 
+  price: 1750, 
+  sale: "<div>-5%</div>", 
+  style: "height: 115px"
+}, {
+  style: "transform: scaleX(-1);", 
+  image: "images/air-max-90-g-golf-shoes-lJzgKP.png", 
+  name: "Nike Air Golf 90", 
+  price: 2670, 
+  sale:"<div>-15%</div>",
+  style: "height: 100px"
 }];
 
 
