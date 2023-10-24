@@ -1,7 +1,6 @@
 * {
   margin: 0;
 }
-
 .header1 {
   height: 75px;
   background-color: black;
@@ -54,7 +53,7 @@
   font-weight: bold;
   width: 90%;
   background-color: rgb(255, 255, 255);
-  height: 1000px;
+  height: 5000px;
   margin-top: -40px;
   flex-direction: column;
 }
@@ -102,10 +101,10 @@ body {
   margin-left: -10px;
 }
 
-.grid-container {
+.grid-container, .adidas-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-template-rows: repeat(2, 180px);
+  grid-template-rows: repeat(1, 180px);
   gap: 10px;
 }
 
@@ -129,6 +128,7 @@ body {
 }
 
 
+
 .product-title, .product-price {
   display: flex;
   align-items: center;
@@ -136,6 +136,11 @@ body {
   font-size: 10px;
   margin: 10px;
   text-align: center;
+  font-size: 10px;
+}
+
+.product-title {
+  font-weight: bold;
 }
 
 .product-price {
@@ -195,6 +200,9 @@ display: none;
 transition: opacity 1s ease-in-out;
 }
 
+.section-title {
+margin: 20px;
+}
 
 @media screen and (max-width: 500px) {
   .header1 {
@@ -249,7 +257,7 @@ transition: opacity 1s ease-in-out;
     font-weight: bold;
     width: 90%;
     background-color: rgb(255, 255, 255);
-    height: 1000px;
+    height: 5000px;
     margin-top: -40px;
     flex-direction: column;
   }
@@ -297,10 +305,10 @@ transition: opacity 1s ease-in-out;
     margin-left: -10px;
   }
 
-  .grid-container {
+  .grid-container, .adidas-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 180px);
+    grid-template-rows: repeat(1, 180px);
     gap: 10px;
   }
 
@@ -324,6 +332,7 @@ transition: opacity 1s ease-in-out;
   }
 
 
+
   .product-title, .product-price {
     display: flex;
     align-items: center;
@@ -331,6 +340,11 @@ transition: opacity 1s ease-in-out;
     font-size: 10px;
     margin: 10px;
     text-align: center;
+    font-size: 10px;
+  }
+
+  .product-title {
+    font-weight: bolder;
   }
 
   .product-price {
@@ -390,6 +404,9 @@ transition: opacity 1s ease-in-out;
  transition: opacity 1s ease-in-out;
 }
 
+.section-title {
+  margin: 20px;
+}
 
 }
 
