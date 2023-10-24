@@ -86,7 +86,7 @@ let slideIndex = 0;
       sale: "<div>-20%</div>"
     }, {
       image: "images/adidas-adifoam-black.webp", 
-      name: "Adidas Adifoam Q", 
+      name: "Adidas Adifoam", 
       price: 1699, 
       sale: "<div>25%</div>",
       style: "height: 70px; margin-top: -15px;  transform: scaleX(-1);"
@@ -98,7 +98,7 @@ let slideIndex = 0;
       style: "height: 100px; margin-top: -5px; transform: scaleX(-1);"
     }, {
       image: "images/adidas-ultraboost-cream.webp", 
-      name: "Adidas UltraBoost ", 
+      name: "Adidas UBoost ", 
       price: 2599, 
       sale: "<div></div>", 
       style: "height: 65px; margin-top: 5px; "

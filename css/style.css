@@ -373,6 +373,16 @@ margin: 20px;
     background-color: black;
     color: white;
     border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .product-details button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    
+
   }
 
   .slideshow, .slideshow-container {
