@@ -41,7 +41,7 @@
 }
 
 
-.hl {
+.h1 {
   background-color: rgb(218, 218, 218);
 }
 
@@ -137,10 +137,12 @@ body {
   margin: 10px;
   text-align: center;
   font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .product-title {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .product-price {
@@ -169,6 +171,14 @@ body {
   background-color: black;
   color: white;
   border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.product-details button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .slideshow, .slideshow-container {
@@ -202,6 +212,10 @@ transition: opacity 1s ease-in-out;
 
 .section-title {
 margin: 20px;
+}
+
+.h1 {
+background-color: rgb(218, 218, 218);
 }
 
 @media screen and (max-width: 500px) {
@@ -245,7 +259,7 @@ margin: 20px;
   }
 
   
-  .hl {
+  .h1 {
     background-color: rgb(218, 218, 218);
   }
   
@@ -381,8 +395,6 @@ margin: 20px;
     color: black;
     background-color: white;
     border: 1px solid black;
-    
-
   }
 
   .slideshow, .slideshow-container {
@@ -416,6 +428,10 @@ margin: 20px;
 
 .section-title {
   margin: 20px;
+}
+
+.h1 {
+  background-color: rgb(218, 218, 218);
 }
 
 }

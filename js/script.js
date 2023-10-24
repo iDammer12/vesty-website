@@ -7,7 +7,7 @@ const product = [{
   sale: "<div>-30%</div>"
 }, {
   image: "images/air-jordan-1-low-black-lucky-green-3.png", 
-  name: "Jordan AJ 1 Low", 
+  name: "Jordan AJ 1", 
   price: 2199, 
   sale: "<div></div>",
   style: "height: 65px; margin-top: 10px;"
@@ -19,7 +19,7 @@ const product = [{
   style: "height: 105px; margin-top: 5px;"
 }, {
   image: "images/nike-dunk-retro-white.webp", 
-  name: "Nike Dunk Retro", 
+  name: "Nike Dunk R", 
   price: 2399, 
   sale: "<div></div>"
 }, {
@@ -31,7 +31,7 @@ const product = [{
 }, {
   style: "transform: scaleX(-1);", 
   image: "images/air-max-90-g-golf-shoes-lJzgKP.png", 
-  name: "Nike Air Golf 90", 
+  name: "Nike Golf 90", 
   price: 2670, 
   sale:"<div>-15%</div>",
   style: "height: 100px"
@@ -143,3 +143,42 @@ let slideIndex = 0;
     })
     
     document.querySelector('.adidas-grid-container').innerHTML = adidasHTML
+
+
+    function h1(color) {
+      document.querySelector('.h1').style.background = color;
+    }
+    function h2(color) {
+      document.querySelector('.h2').style.background = color;
+    }
+    function h3(color) {
+      document.querySelector('.h3').style.background = color;
+    }
+    function h4(color) {
+      document.querySelector('.h4').style.background = color;
+    }
+
+    function change1() {
+        h1('rgb(218, 218, 218)');
+        h2('white')
+        h3('white')
+        h4('white')
+    }      
+    function change2() {
+      h2('rgb(218, 218, 218)');
+      h1('white')
+      h3('white')
+      h4('white')
+    }   
+    function change3() {
+      h3('rgb(218, 218, 218)');
+      h2('white')
+      h1('white')
+      h4('white') 
+    }   
+    function change4() {
+      h4('rgb(218, 218, 218)');
+      h2('white')
+      h3('white')
+      h1('white')
+    }    
