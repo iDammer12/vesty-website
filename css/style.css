@@ -367,6 +367,19 @@ background-color: rgb(218, 218, 218);
 
   }
 
+  .uhl  {
+    background-color: white;
+  }
+  
+  .hl {
+    background-color: rgb(218, 218, 218);
+  }
+  
+  .header-element a {
+    width: 100%;
+    height: 100%;
+  }
+
   .product-price div {
     margin-left: 5px;
     color: red;
@@ -456,6 +469,10 @@ background-color: rgb(218, 218, 218);
   text-align: center;
 }
 
+.product-title {
+  margin: 0;
+}
+
 }
 
 .more a {
@@ -468,4 +485,43 @@ background-color: rgb(218, 218, 218);
   color: black;
   width: 100%;
   text-align: center;
+}
+
+.more {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.more a {
+  text-decoration: none;
+}
+
+.header2 p a {
+  text-decoration: none;
+  width: auto;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.uhl  {
+  background-color: white;
+}
+
+.hl {
+  background-color: rgb(218, 218, 218);
+}
+
+.header-element a {
+  width: 100%;
+  height: 100%;
 }
