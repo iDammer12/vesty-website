@@ -142,7 +142,7 @@ let slideIndex = 0;
       console.log(adidasHTML)
     })
     
-    document.querySelector('.adidas-grid-container').innerHTML = adidasHTML
+    document.querySelector('.grid-container').innerHTML = adidasHTML
 
 
     function h1(color) {

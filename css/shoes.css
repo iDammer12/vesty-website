@@ -22,7 +22,7 @@
   text-align: center;
   width: 100%;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .product-container-container {
@@ -34,7 +34,13 @@
 }
 
 .brand-title {
-  margin: 10px;
+  width: 97%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
   font-weight: bold;
   font-size: 18px;
+  margin-top: 75px;
 }
