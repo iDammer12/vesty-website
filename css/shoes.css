@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: 1000px;
+  height: 2000px;
 }
 
 .page-title {
@@ -22,7 +22,7 @@
   text-align: center;
   width: 100%;
   padding: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .product-container-container {
@@ -42,5 +42,5 @@
   margin: 15px;
   font-weight: bold;
   font-size: 18px;
-  margin-top: 75px;
+  margin-top: 25px;
 }

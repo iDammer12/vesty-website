@@ -58,7 +58,6 @@ adidas.forEach((adidas) => {
     </div>
   </div>
   `
-  console.log(adidasHTML)
 })
 
 document.querySelector('.adidas-grid-container').innerHTML = adidasHTML
@@ -125,3 +124,38 @@ product.forEach((product) => {
 })
 
 document.querySelector('.nike-grid-container').innerHTML = productsHTML
+
+
+const puma = [{
+  image: "images/puma/Slipstream-Xtreme-Sneakers.avif", 
+  name: "Puma SlipStream Xtreme", 
+  price: 2799, 
+  sale: "<div></div>", 
+  style: "height: 75px;"
+}]
+
+let pumaHTML = ''
+
+puma.forEach((puma) => {
+
+  pumaHTML +=`
+  <div class="square">
+    <div class="product-image">
+      <img style="${puma.style}" src="${puma.image}" alt="">
+    </div>
+    <div class="product-title">
+      ${puma.name}
+    </div>
+    <div class="product-price">
+      ${puma.price} MDL ${puma.sale}
+    </div>
+    <div class="product-details">
+      <button>Detalii</button>
+    </div>
+  </div>
+  `
+  console.log(pumaHTML)
+})
+
+document.querySelector('.puma-grid-container').innerHTML = pumaHTML
+
