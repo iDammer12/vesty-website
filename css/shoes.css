@@ -1,0 +1,40 @@
+* {
+  font-family: Arial;
+}
+
+.main-page {
+  background-color: white;
+  width: 90%;
+  height: 100px;
+  margin-top: -11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 1000px;
+}
+
+.page-title {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 30px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.product-container-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  width: 80%;
+}
+
+.brand-title {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
