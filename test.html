@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+  <button class="button" onclick="showNextButton()">Button 1</button>
+  <button class="button" onclick="showNextButton()">Button 2</button>
+  <button class="button" onclick="showNextButton()">Button 3</button>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const buttons = document.querySelectorAll('.button');
+
+  function showNextButton() {
+    if (currentIndex < buttons.length) {
+      buttons[currentIndex].style.transform = 'translateX(-100%)';
+      currentIndex++;
+
+      setTimeout(() => {
+        if (currentIndex < buttons.length) {
+          buttons[currentIndex].style.transform = 'translateX(0)';
+        }
+      }, 500);
+    }
+  }
+  </script>
+</body>
+</html>
