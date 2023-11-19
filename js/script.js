@@ -1,184 +1,194 @@
-
-
-const product = [{
-  image: "images/jordan-1-black-orange.webp",
-  name: "Air Jordan 1 ", 
-  price: 2199,
-  sale: "<div>-30%</div>"
-}, {
-  image: "images/air-jordan-1-low-black-lucky-green-3.png", 
-  name: "Jordan AJ 1", 
-  price: 2199, 
-  sale: "<div></div>",
-  style: "height: 65px; margin-top: 10px;"
-}, {
-  image: "images/nike-air-force-1-07-white.png", 
-  name: "Air Force 1 07'", 
-  price: 2299 ,
-  sale: "<div>-10%</div>", 
-  style: "height: 105px; margin-top: 5px;"
-}, {
-  image: "images/nike-dunk-retro-white.webp", 
-  name: "Nike Dunk R", 
-  price: 2399, 
-  sale: "<div></div>"
-}, {
-  image: "images/nike-juniper-trail-2.png", 
-  name: "Nike JT 2", 
-  price: 1750, 
-  sale: "<div>-5%</div>", 
-  style: "height: 115px"
-}, {
-  style: "transform: scaleX(-1);", 
-  image: "images/air-max-90-g-golf-shoes-lJzgKP.png", 
-  name: "Nike Golf 90", 
-  price: 2670, 
-  sale:"<div>-15%</div>",
-  style: "height: 100px"
-}];
-
-
-let productsHTML = ''
-
-product.forEach((product) => {
-
-  productsHTML +=`
-  <div class="square">
-    <div class="product-image">
-      <img style="${product.style}" src="${product.image}" alt="">
+setInterval(() => {
+  if(document.querySelector(".brands").innerHTML = `
+    <div class="button-1 brand edges">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
     </div>
-    <div class="product-title">
-      ${product.name}
+    <div class="button-2 brand">
+      <img width="75%" src="images/logos/puma-logo.png" alt="">
     </div>
-    <div class="product-price">
-      ${product.price} MDL ${product.sale}
+    <div class="button-3 brand">
+      <img width="85%" src="images/logos/nike-Logo.png" alt="">
     </div>
-    <div class="product-details">
-      <button>Detalii</button>
+    <div class="button-4 brand">
+      <img width="65%" src="images/logos/adidas-logo.png" alt="">
     </div>
+    <div class="button-5 brand edges">
+      <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+    </div>
+  `) {
+    document.querySelector(".brands").innerHTML = `
+
+      <div class="button-2 brand edges">
+        <img width="75%" src="images/logos/puma-logo.png" alt="">
+      </div>
+      <div class="button-3 brand">
+        <img width="85%" src="images/logos/nike-Logo.png" alt="">
+      </div>
+      <div class="button-4 brand">
+        <img width="65%" src="images/logos/adidas-logo.png" alt="">
+      </div>
+      <div class="button-5 brand">
+        <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+      </div>
+      <div class="button-1 brand edges">
+        <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+      </div>
+    `
+  }
+
+
+
+}, 2000)
+
+
+setInterval(() => {
+  if(document.querySelector(".brands").innerHTML = `  
+  <div class="button-2 brand edges">
+  <img width="75%" src="images/logos/puma-logo.png" alt="">
+  </div>
+  <div class="button-3 brand">
+    <img width="85%" src="images/logos/nike-Logo.png" alt="">
+  </div>
+  <div class="button-4 brand">
+    <img width="65%" src="images/logos/adidas-logo.png" alt="">
+  </div>
+  <div class="button-5 brand">
+    <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+  </div>
+  <div class="button-1 brand edges">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+  </div>
+`) {
+  document.querySelector(".brands").innerHTML = `
+  <div class="button-3 brand edges">
+    <img width="85%" src="images/logos/nike-Logo.png" alt="">
+  </div>
+  <div class="button-4 brand">
+    <img width="65%" src="images/logos/adidas-logo.png" alt="">
+  </div>
+  <div class="button-5 brand">
+    <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+  </div>
+  <div class="button-1 brand edge">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+  </div>
+  <div class="button-2 brand edges">
+    <img width="75%" src="images/logos/puma-logo.png" alt="">
   </div>
   `
-})
+}
 
-document.querySelector('.grid-container').innerHTML = productsHTML
+}, 4000)
 
+setInterval(() => {
+  if(document.querySelector(".brands").innerHTML = `<div class="button-3 brand edges">
+  <img width="85%" src="images/logos/nike-Logo.png" alt="">
+</div>
+<div class="button-4 brand">
+  <img width="65%" src="images/logos/adidas-logo.png" alt="">
+</div>
+<div class="button-5 brand">
+  <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+</div>
+<div class="button-1 brand edge">
+  <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+</div>
+<div class="button-2 brand edges">
+  <img width="75%" src="images/logos/puma-logo.png" alt="">
+</div>`) {
+  document.querySelector(".brands").innerHTML = `
+  <div class="button-4 brand edges">
+    <img width="65%" src="images/logos/adidas-logo.png" alt="">
+  </div>
+  <div class="button-5 brand">
+    <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+  </div>
+  <div class="button-1 brand">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+  </div>
+  <div class="button-2 brand ">
+    <img width="75%" src="images/logos/puma-logo.png" alt="">
+  </div>
+  <div class="button-3 brand edges">
+    <img width="85%" src="images/logos/nike-Logo.png" alt="">
+  </div>
+  `
+}
+}, 6000)
 
-let slideIndex = 0;
-    showSlides();
+setInterval(() => {
+  if(  document.querySelector(".brands").innerHTML = `
+  <div class="button-4 brand edges">
+    <img width="65%" src="images/logos/adidas-logo.png" alt="">
+  </div>
+  <div class="button-5 brand">
+    <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+  </div>
+  <div class="button-1 brand">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+  </div>
+  <div class="button-2 brand ">
+    <img width="75%" src="images/logos/puma-logo.png" alt="">
+  </div>
+  <div class="button-3 brand edges">
+    <img width="85%" src="images/logos/nike-Logo.png" alt="">
+  </div>
+  `) {
+    document.querySelector(".brands").innerHTML = `
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change image every 3 seconds
-    }
+  <div class="button-5 brand edges">
+    <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+  </div>
+  <div class="button-1 brand">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+  </div>
+  <div class="button-2 brand ">
+    <img width="75%" src="images/logos/puma-logo.png" alt="">
+  </div>
+  <div class="button-3 brand">
+    <img width="85%" src="images/logos/nike-Logo.png" alt="">
+  </div>
+  <div class="button-4 brand edges">
+  <img width="65%" src="images/logos/adidas-logo.png" alt="">
+</div>
+  `
+  }
+}, 8000)
 
-
-    const adidas = [{
-      image: "images/adidas-forum-low-white-brown.webp",
-      name: "Adidas Forum  ", 
-      price: 2299,
-      sale: "<div>-20%</div>"
-    }, {
-      image: "images/adidas-adifoam-black.webp", 
-      name: "Adidas Adifoam", 
-      price: 1699, 
-      sale: "<div>25%</div>",
-      style: "height: 70px; margin-top: -15px;  transform: scaleX(-1);"
-    }, {
-      image: "images/adidas-nizza-white.png", 
-      name: "Adidas Nizza ", 
-      price: 1699 ,
-      sale: "<div>-5%</div>", 
-      style: "height: 100px; margin-top: -5px; transform: scaleX(-1);"
-    }, {
-      image: "images/adidas-ultraboost-cream.webp", 
-      name: "Adidas UBoost ", 
-      price: 2599, 
-      sale: "<div></div>", 
-      style: "height: 65px; margin-top: 5px; "
-    }, {
-      image: "images/adidas-hoope-3-mid-black-white.webp", 
-      name: "Adidas Hoops 3", 
-      price: 1750, 
-      sale: "<div>10%</div>", 
-      style: "height: 50px; margin-top: 5px;"
-    }, {
-      style: "transform: scaleX(-1);", 
-      image: "images/adidas-duramo-sl.webp", 
-      name: "Adidas Duramo", 
-      price: 1399, 
-      sale:"<div>-15%</div>",
-      style: "height: 100px",
-      style: "transform: scaleX(-1); height:115px; margin-top: 15px",
-    }];
-    
-    
-    let adidasHTML = ''
-    
-    adidas.forEach((adidas) => {
-
-      adidasHTML +=`
-      <div class="square">
-        <div class="product-image">
-          <img style="${adidas.style}" src="${adidas.image}" alt="">
-        </div>
-        <div class="product-title">
-          ${adidas.name}
-        </div>
-        <div class="product-price">
-          ${adidas.price} MDL ${adidas.sale}
-        </div>
-        <div class="product-details">
-          <button>Detalii</button>
-        </div>
-      </div>
-      `
-      console.log(adidasHTML)
-    })
-    
-    document.querySelector('.grid-container').innerHTML = adidasHTML
-
-
-    function h1(color) {
-      document.querySelector('.h1').style.background = color;
-    }
-    function h2(color) {
-      document.querySelector('.h2').style.background = color;
-    }
-    function h3(color) {
-      document.querySelector('.h3').style.background = color;
-    }
-    function h4(color) {
-      document.querySelector('.h4').style.background = color;
-    }
-
-    function change1() {
-        h1('rgb(218, 218, 218)');
-        h2('white')
-        h3('white')
-        h4('white')
-    }      
-    function change2() {
-      h2('rgb(218, 218, 218)');
-      h1('white')
-      h3('white')
-      h4('white')
-    }   
-    function change3() {
-      h3('rgb(218, 218, 218)');
-      h2('white')
-      h1('white')
-      h4('white') 
-    }   
-    function change4() {
-      h4('rgb(218, 218, 218)');
-      h2('white')
-      h3('white')
-      h1('white')
-    }    
+setInterval(() => {
+  if(document.querySelector(".brands").innerHTML = `
+  <div class="button-5 brand edges">
+    <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+  </div>
+  <div class="button-1 brand">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+  </div>
+  <div class="button-2 brand ">
+    <img width="75%" src="images/logos/puma-logo.png" alt="">
+  </div>
+  <div class="button-3 brand">
+    <img width="85%" src="images/logos/nike-Logo.png" alt="">
+  </div>
+  <div class="button-4 brand edges">
+  <img width="65%" src="images/logos/adidas-logo.png" alt="">
+</div>
+  `) {
+    document.querySelector(".brands").innerHTML = `
+    <div class="button-1 brand edges">
+    <img width="75%" src="images/logos/new-balance-logo.png" alt="">
+    </div>
+    <div class="button-2 brand">
+      <img width="75%" src="images/logos/puma-logo.png" alt="">
+    </div>
+    <div class="button-3 brand">
+      <img width="85%" src="images/logos/nike-Logo.png" alt="">
+    </div>
+    <div class="button-4 brand">
+      <img width="65%" src="images/logos/adidas-logo.png" alt="">
+    </div>
+    <div class="button-5 brand edges">
+      <img width="75%" src="images/logos/lacoste-logo.png" alt="">
+    </div>
+  `
+  }
+}, 10000)
